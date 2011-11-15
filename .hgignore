@@ -1,0 +1,18 @@
+# use glob syntax.
+syntax: glob
+output/*
+tmp/*
+.sass-cache/*
+compass/.sass-cache/*
+*.swp
+*~
+.DS_Store
+.bundle
+output.diff
+eproject.cfg
+.git/
+.gitignore
+
+# switch to regexp syntax.
+#syntax: regexp
+#^\.pc/

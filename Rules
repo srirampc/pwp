@@ -1,0 +1,74 @@
+#!/usr/bin/env ruby
+require 'compass'
+
+Compass.add_project_configuration('compass/config.rb')
+
+preprocess do
+  # authors may unpublish items by setting meta attribute publish: false
+  items.delete_if { |item| item[:publish] == false }
+
+  copy_static
+  create_tag_pages
+  add_update_item_attributes
+end
+
+compile '/assets/css/*/' do
+  filter :sass, Compass.sass_engine_options
+  filter :relativize_paths, :type => :css
+end
+
+compile '/assets/coffee/*/' do
+  filter :coffee
+end
+
+compile '*' do
+  # item[:extension] returns 'html.erb' for multi-dotted filename
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+
+  if item[:has_code]
+    filter :colorize_syntax,
+           :colorizers => { :coffeescript => :pygmentize,
+                            :ruby => :pygmentize,
+                            :html => :pygmentize }
+  end
+
+  if ext == 'erb'
+    filter :erb
+    filter :relativize_paths, :type => :html
+  elsif ext == 'haml' || ext.nil?
+    filter :haml
+    filter :relativize_paths, :type => :html 
+  elsif ext == 'md' || ext == 'markdown'
+    filter :erb
+    filter :rdiscount
+    filter :relativize_paths, :type => :html
+  else
+    raise "Filter is not configured for #{item.identifier} in Rules file."
+  end
+
+  # use layouts with .html extension or layout specified in meta
+  item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html' 
+
+  layout 'default' unless item[:layout] == "none"
+end
+
+#
+# For compass : partials need not be translated.
+route '/assets/css/_*/' do
+  nil
+end
+
+route '/assets/css/*/' do
+  item.identifier.chop + '.css'
+end
+
+# so that the /assets/coffee/ item is copied to /javascripts/ item
+route '/assets/coffee/*/' do
+  item.identifier.sub(%r{^/assets/coffee}, '/assets/js').chop + '.js'
+end
+
+route '*' do
+  route_path(item)
+end
+
+layout '*', :haml

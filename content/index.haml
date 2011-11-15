@@ -1,0 +1,41 @@
+---
+title: 'Home'
+---
+
+%div#home
+  %img.inset.right{'src'=>'/assets/images/logo.jpg',
+                   'title' => 'Pound S',
+                   'alt' => 'Pound S',
+                   'width' => '120px'}
+
+  :markdown  
+    # Welcome
+    I'm Sriram P C, student, programmer, and a former consultant. 
+
+    # [Work](/work.html)
+    I am a [Research Scholar](/work.html) in Systems Biology - 
+    specifically in the use of parallel computing algorithms in systems 
+    biology - at the Indian Institute of Technology, Bombay's Computer
+    Science and Engineering Department. Formerly, I was a consultant 
+    in an IT company.
+
+    # [Blog](/blog/)
+    I keep a blog called _[QSAC](/blog/)_ on my work and life as a research scholar.
+    Recent posts include:
+
+  - oldest_item = nil
+  - current_index = 0
+
+  - sorted_articles[current_index, 3].each do |item|
+    - oldest_item = item
+    = render('_excerpt', :item => item) 
+
+  %h1
+    %a{:title => 'Twitter', :href => 'http://twitter.com/srirampc'} Twitter
+  %div
+    %p.twitter_update_list
+      Contacting Twitter&#8230;
+    %script{:type => "text/javascript",
+            :src => "http://twitter.com/javascripts/blogger.js"}
+    %script{:type => "text/javascript",
+            :src => 'http://twitter.com/statuses/user_timeline/srirampc.json?callback=twitterCallback2&count=1'}
