@@ -4,6 +4,7 @@ tags: [seminar, academic]
 created_at: 2011/05/03
 kind: article
 excerpt: What I learned from my Ph.D seminar ?
+disqus: true
 ---
 
 Ph.D. Seminar is a mandatory 4-credit course required for getting

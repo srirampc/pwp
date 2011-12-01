@@ -4,6 +4,7 @@ tags: [academic]
 created_at: 2011/05/10
 kind: article
 excerpt: 'Grades : Oven and Freezer.'
+disqus: true
 ---
 
 I had three courses for credit with my grades 6.0,9.0 and 10.0, and

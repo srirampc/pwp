@@ -4,6 +4,7 @@ tags: [problem solving]
 created_at: 2011/03/20
 kind: article
 excerpt: Observations on my problem solving failures.
+disqus: true
 ---
 
 The most difficult subject in this semester for me is 'Design and

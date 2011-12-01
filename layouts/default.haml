@@ -1,9 +1,5 @@
 ---
 ---
-:ruby
-  # may be set by partials
-  @config[:include_disqus_js] = false
-
 !!! Strict
 %html
   %head
@@ -39,7 +35,7 @@
       .clear
 
     -# disqus: inserts number of commments
-    - if @config[:include_disqus_js] == true
+    - if @item[:disqus] == 'true'
       :javascript
         (function() {
           var links = document.getElementsByTagName('a');

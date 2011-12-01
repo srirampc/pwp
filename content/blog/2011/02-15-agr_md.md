@@ -4,6 +4,7 @@ tags: [teaching]
 created_at: 2011/02/15
 kind: article
 excerpt: Few observations on my favorite teacher AGR
+disqus: true
 ---
 
 There are two kinds of doctors - the surgeon and the physician.

@@ -355,5 +355,21 @@ a.widebutton:hover{
   border:1px dotted $normal_color;      
 }
 
+.twitted ul#twitter_update_list {
+	margin: 0;
+	padding: 0 0.8em;
+	list-style-type: none;
+}
+
+.twitted ul#twitter_update_list li {
+	margin: 0;
+	padding: 0.8em 0 1em 0;
+}
+
+.twitted p.profileLink a {
+	text-align: right;
+    display:block;
+    float:right;
+}
 @import "pygment";
 // @import "coderay";

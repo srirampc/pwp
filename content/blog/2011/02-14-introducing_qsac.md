@@ -4,6 +4,7 @@ tags: [intro]
 created_at: 2011/02/14
 kind: article
 excerpt: A short post describing what I intend for my blog.
+disqus: true
 ---
 
 Welcome to my blog on research life.

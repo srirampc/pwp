@@ -4,8 +4,7 @@
   .meta
     %ul.tags
       %li= pretty_time(item[:created_at])
-      - if disqus_shortname 
-        - @config[:include_disqus_js] = true
+      - if disqus_shortname
         %li
           &middot;
         %li

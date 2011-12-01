@@ -87,6 +87,11 @@ def copy_static
   FileUtils.cp_r 'static/.', 'output/' 
 end
 
+# This is a hack for now : need to do this better
+def copy_coffee_src
+  FileUtils.cp_r 'content/assets/coffee/.', 'output/assets/coffee/'
+end
+
 def partial(identifier_or_item)
   item = !item.is_a?(Nanoc3::Item) ? identifier_or_item : item_by_identifier(identifier_or_item)
   item.compiled_content(:snapshot => :pre) 

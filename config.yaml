@@ -41,7 +41,6 @@ excerpt_count: 6
 other_articles_max: 3
 
 # DISQUS Site Shortname. Comment out to disable.
-include_disqus_js: false
 disqus_shortname: qsac
 
 #
