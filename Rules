@@ -43,6 +43,9 @@ compile '*' do
     filter :erb
     filter :rdiscount
     filter :relativize_paths, :type => :html
+  elsif ext == 'org'
+    filter :org
+    filter :relativize_paths, :type => :html
   else
     raise "Filter is not configured for #{item.identifier} in Rules file."
   end
@@ -50,7 +53,12 @@ compile '*' do
   # use layouts with .html extension or layout specified in meta
   item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html' 
 
-  layout 'default' unless item[:layout] == "none"
+  #print 'hi ', item[:layout].to_s, "\n"
+  if item[:layout] == "ec"
+    layout 'ec'
+  else
+    layout 'default' unless item[:layout] == "none"
+  end
 end
 
 #
