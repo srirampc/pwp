@@ -9,13 +9,12 @@ disqus: true
 
 Ph.D. Seminar is a mandatory 4-credit course required for getting
 through the Ph.D qualifier. A grade of minimum 8 is required for
-qualification. Title of my seminar is _Construction of Gene Networks 
+qualification. Title of my seminar is _Construction of Gene Networks
 from Expression Profiles_. Seminar is mostly a literature review of
-the topic. Structure learning had been of my interest for quite a 
-while, and I thought I would be wetting my feet with a review of Gene 
+the topic. Structure learning had been of my interest for quite a
+while, and I thought I would be wetting my feet with a review of Gene
 networks construction. I discuss here mostly about the
-preparation and soft-skills. About the topic itself, my report is
-[here][report-pdf].
+preparation and soft-skills.
 
 ## Report Writing
 
@@ -23,7 +22,7 @@ The task of report writing is to make a summary of the papers read. I
 read about 16 papers on the topic. I set myself a target of one week
 to write a report. I even told my guide that I will send him the copy
 of the report within a week. Having a hard deadline helps me focus. It
-took 2 days longer. 
+took 2 days longer.
 
 For writing the report, I first started in the analog form. I wrote
 the notes of each paper on a single sheet of paper - A4 sheets written
@@ -35,7 +34,7 @@ should have). Then, I moved around these sheets, changing the order,
 until I got the order and the topics right. I found that this exercise
 helped get the over-all picture. I think getting the big-picture is a
 very important step in writing a decent report. It helps build a
-narrative. 
+narrative.
 
 I used XeLaTeX to format the report. With XeLaTeX, one can use
 open-type fonts. For serif text, I use, what I think is the most
@@ -45,17 +44,17 @@ sans-serif text, I use the ['Myriad Pro'][myriad] type. (Steve jobs
 uses Myriad typeface in his keynote talks. Its Apple Inc.'s corporate
 type). Both these fonts are  available, if you install Adobe Acrobat
 Reader. (If I can, I would buy  the complete [Adobe Font
-Folio][adobe-type] collection for 2600 USD) 
+Folio][adobe-type] collection for 2600 USD)
 
 LaTeX formatting for the report was inspired from
-[uggedal's thesis][uggedal]. 
+[uggedal's thesis][uggedal].
 For figures in LaTeX, I used tikz. I initially thought, I
-would use vector drawing software such as ink scape. But I 
+would use vector drawing software such as ink scape. But I
 will find any excuse to do programming. I choose TikZ. TikZ, with its
 clean interface, is flexible and much easier to draw than MetaPost (I
 don't know anything about pstricks). Source code for my report and its
 figures is [here][report-src] (Source added only to use it as an
-example. No guarantee that it would even compile). 
+example. No guarantee that it would even compile).
 
 In hindsight, the problems I find in my report (and its making) are
 
@@ -70,7 +69,7 @@ In hindsight, the problems I find in my report (and its making) are
    angel. That lead to spending too much time figuring out how to
    write my latex macros, TikZ diagrams etc., and less than optimal
    time re-writing. I have to remember this : "All good writing is
-   re-writing". 
+   re-writing".
 3. Elaborate explanations : In the end, I found the report too
    bloated. I gave to a friend to read and give me feedback, and she
    told me that the report is just too big. The difficulty with
@@ -98,25 +97,7 @@ version. The first version was much longer and much bigger. When I
 rehearsed the first time, it took 80 minutes! I am only allowed 20
 minutes. I had to rehearse four times to get down to 20 minutes. I
 recorded each presentation using the screen-cast software Camtasia. It
-is a useful for catching the mistakes. 
-Here is first 13 minutes of my third rehearsal (Feel free to skip):
-
-<div id="media">
-  <object id="csSWF" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="378" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0">
-   <param name="src" value='/assets/videos/Seminar_controller.swf'/>
-   <param name="bgcolor" value='#1a1a1a'/>
-   <param name="quality" value='best'/>
-   <param name="allowScriptAccess" value="always"/>
-   <param name="allowFullScreen" value="true"/>
-   <param name="scale" value="showall"/>
-   <param name='flashVars'
-  value='autostart=false#&thumb=/assets/videos/FirstFrame.png&thumbscale=45&color=0x000000,0x000000'/>
-
-   <embed name="csSWF" src='/assets/videos/Seminar_controller.swf' width="640" height="378" bgcolor="#1a1a1a" quality="best" allowScriptAccess="always" allowFullScreen="true" scale="showall" flashVars="autostart=false&thumb=/assets/videos/FirstFrame.png&thumbscale=45&color=0x000000,0x000000" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
-
-  </object>
-</div>
-
+is a useful for catching the mistakes.
 
 In hindsight, the problems I find in my preparation are:
 
@@ -131,7 +112,7 @@ In hindsight, the problems I find in my preparation are:
 2. Too much focus on the visuals: I spent quite a while on how the
    slide should look like and how each picture should assemble. I
    realize the time could have been useful in editing my content, and
-   stream-lining it. 
+   stream-lining it.
 3. The voice : My voice has the monotonous frequency, which I think
    has a pretty good chance of tearing the examiner's ear drum upon
    the chance that it is natural frequency of the ear drum. I need to
@@ -156,10 +137,9 @@ thought about it, I had a much better answer. I have to learn to
 reduce this lead time of the thought process between Q and A.
 
 Other than that, the presentation went fine (for some definition of
-'fine'). 
+'fine').
 
 
-[report-pdf]: /assets/docs/seminar-report.pdf
 [report-src]: /assets/src/seminar-report.zip
 [present-slides]: /assets/docs/seminar-present.pdf
 [sarawagi]: http://www.cse.iitb.ac.in/~sunita/

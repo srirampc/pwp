@@ -29,6 +29,7 @@ compile '*' do
   if item[:has_code]
     filter :colorize_syntax,
            :colorizers => { :coffeescript => :pygmentize,
+                            :r => :pygmentize,
                             :ruby => :pygmentize,
                             :html => :pygmentize }
   end
@@ -38,7 +39,7 @@ compile '*' do
     filter :relativize_paths, :type => :html
   elsif ext == 'haml' || ext.nil?
     filter :haml
-    filter :relativize_paths, :type => :html 
+    filter :relativize_paths, :type => :html
   elsif ext == 'md' || ext == 'markdown'
     filter :erb
     filter :rdiscount
@@ -51,7 +52,7 @@ compile '*' do
   end
 
   # use layouts with .html extension or layout specified in meta
-  item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html' 
+  item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html'
 
   #print 'hi ', item[:layout].to_s, "\n"
   if item[:layout] == "ec"

@@ -1,81 +1,85 @@
---- 
-:"content/2009/12-31-end_of_year.haml": 
+---
+:content/2009/12-31-end_of_year.haml:
   :created_at: 2009/12/31
-  :updated_at: 2010-06-16 03:44:42 +05:30
+  :updated_at: 2010-06-16 03:44:42.000000000 +05:30
   :digest: a26aafbc69e5e95b7fe2b258bef9513fadfdce5c
-:"content/2010/01-01-ruby_article.haml": 
+:content/2010/01-01-ruby_article.haml:
   :created_at: 2010/01/01
-  :updated_at: 2010-06-16 03:44:42 +05:30
+  :updated_at: 2010-06-16 03:44:42.000000000 +05:30
   :digest: 35eab6135db6e757cbec195f0d31d1ceb1b7c4d1
-:"content/2010/01-03-stylesheet_article.haml": 
+:content/2010/01-03-stylesheet_article.haml:
   :created_at: 2010/01/03
-  :updated_at: 2010-06-16 03:44:42 +05:30
+  :updated_at: 2010-06-16 03:44:42.000000000 +05:30
   :digest: f2a1d55406e72627d1b85366492f38570f9ff000
-:"content/2010/01-13-erb-markdown-test.html.md": 
+:content/2010/01-13-erb-markdown-test.html.md:
   :created_at: 2010/01/13
-  :updated_at: 2010-06-16 03:44:42 +05:30
+  :updated_at: 2010-06-16 03:44:42.000000000 +05:30
   :digest: b0b78b830d428a5ec9015c0decccaf5cde7d6653
-:"content/2010/01-14-markdown-test.md": 
+:content/2010/01-14-markdown-test.md:
   :created_at: 2010/01/14
-  :updated_at: 2010-06-16 03:44:42 +05:30
+  :updated_at: 2010-06-16 03:44:42.000000000 +05:30
   :digest: 290196131b48b501ad9c5f340b63039991e490d9
-:"content/2010/01-15-getting_started_with_nanoc3_blog.html.md": 
+:content/2010/01-15-getting_started_with_nanoc3_blog.html.md:
   :created_at: 2010/01/15
-  :updated_at: 2010-06-16 04:15:40 +05:30
+  :updated_at: 2010-06-16 04:15:40.000000000 +05:30
   :digest: b83ea94d2919845a9f25c4a5b597ebdcbe660809
-:"content/blog/2009/12-31-end_of_year.haml": 
+:content/blog/2009/12-31-end_of_year.haml:
   :created_at: 2009/12/31
-  :updated_at: 2011-07-01 19:22:41 +05:30
+  :updated_at: 2011-07-01 19:22:41.000000000 +05:30
   :digest: a26aafbc69e5e95b7fe2b258bef9513fadfdce5c
-:"content/blog/2010/01-01-ruby_article.haml": 
+:content/blog/2010/01-01-ruby_article.haml:
   :created_at: 2010/01/01
-  :updated_at: 2011-07-01 19:22:42 +05:30
+  :updated_at: 2011-07-01 19:22:42.000000000 +05:30
   :digest: 35eab6135db6e757cbec195f0d31d1ceb1b7c4d1
-:"content/blog/2010/01-03-stylesheet_article.haml": 
+:content/blog/2010/01-03-stylesheet_article.haml:
   :created_at: 1980/1/1
-  :updated_at: 2011-07-01 19:22:42 +05:30
+  :updated_at: 2011-07-01 19:22:42.000000000 +05:30
   :digest: f2a1d55406e72627d1b85366492f38570f9ff000
-:"content/blog/2010/01-13-erb-markdown-test.html.md": 
+:content/blog/2010/01-13-erb-markdown-test.html.md:
   :created_at: 1980/1/1
-  :updated_at: 2011-07-01 19:22:42 +05:30
+  :updated_at: 2011-07-01 19:22:42.000000000 +05:30
   :digest: b0b78b830d428a5ec9015c0decccaf5cde7d6653
-:"content/blog/2010/01-14-markdown-test.md": 
+:content/blog/2010/01-14-markdown-test.md:
   :created_at: 1980/1/1
-  :updated_at: 2011-07-01 19:22:42 +05:30
+  :updated_at: 2011-07-01 19:22:42.000000000 +05:30
   :digest: 290196131b48b501ad9c5f340b63039991e490d9
-:"content/blog/2010/01-15-getting_started_with_nanoc3_blog.html.md": 
+:content/blog/2010/01-15-getting_started_with_nanoc3_blog.html.md:
   :created_at: 2010/01/15
-  :updated_at: 2011-07-01 19:22:42 +05:30
+  :updated_at: 2011-07-01 19:22:42.000000000 +05:30
   :digest: b83ea94d2919845a9f25c4a5b597ebdcbe660809
-:"content/blog/2011/02-14-introducing-qsac.md": 
+:content/blog/2011/02-14-introducing-qsac.md:
   :created_at: 2011/02/14
-  :updated_at: 2011-07-14 19:39:10 +05:30
+  :updated_at: 2011-07-14 19:39:10.000000000 +05:30
   :digest: b2003cb98f4bc05c335a7e1625a776fdc48c32aa
-:"content/blog/2011/02-15-agr-md.md": 
+:content/blog/2011/02-15-agr-md.md:
   :created_at: 2011/02/15
-  :updated_at: 2011-07-14 21:14:06 +05:30
+  :updated_at: 2011-07-14 21:14:06.000000000 +05:30
   :digest: 5b4877ad5a343cb7e52579ceab865cdf0e97ddf3
-:"content/blog/2011/02-14-introducing_qsac.md": 
+:content/blog/2011/02-14-introducing_qsac.md:
   :created_at: 2011/02/14
-  :updated_at: 2011-11-15 22:08:59 +05:30
+  :updated_at: 2011-11-15 22:08:59.000000000 +05:30
   :digest: e637df0274ff89267a4d53ed17eb8efe08338212
-:"content/blog/2011/02-15-agr_md.md": 
+:content/blog/2011/02-15-agr_md.md:
   :created_at: 2011/02/15
-  :updated_at: 2011-11-15 22:08:59 +05:30
+  :updated_at: 2011-11-15 22:08:59.000000000 +05:30
   :digest: b2fb2b73c2bfbb49c197a5e13ca69402911ce309
-:"content/blog/2011/03-20-why_fail_solve_problems.md": 
+:content/blog/2011/03-20-why_fail_solve_problems.md:
   :created_at: 2011/03/20
-  :updated_at: 2011-11-15 22:08:59 +05:30
+  :updated_at: 2011-11-15 22:08:59.000000000 +05:30
   :digest: 8e7ec20d585696c437680e54d8a07f7bf5f22ef8
-:"content/blog/2011/05-03_seminar_presentation.md": 
+:content/blog/2011/05-03_seminar_presentation.md:
   :created_at: 2011/05/03
-  :updated_at: 2011-11-15 22:08:59 +05:30
-  :digest: f082d64ccb9c22605bc0f5bd9d0421ad6306b8e1
-:"content/blog/2011/05-10_semester_grades.md": 
+  :updated_at: 2012-09-23 14:07:59.441317588 +05:30
+  :digest: 427d59814b268d2e8e7ab59366179f6441b55deb
+:content/blog/2011/05-10_semester_grades.md:
   :created_at: 2011/05/10
-  :updated_at: 2011-11-15 22:08:59 +05:30
+  :updated_at: 2011-11-15 22:08:59.000000000 +05:30
   :digest: 84dcc59093423312ed3b773e18677699836688f3
-:"content/blog/2011/07-19-raphael_js_using_coffee_script.md": 
-  :created_at: "2011-07-19"
-  :updated_at: 2011-12-02 23:42:38.609038 +05:30
+:content/blog/2011/07-19-raphael_js_using_coffee_script.md:
+  :created_at: '2011-07-19'
+  :updated_at: 2011-12-02 23:42:38.609038000 +05:30
   :digest: fc5a3f208943505f709b766bedc0f87d0d3ec4f2
+:content/blog/2012/09-21-visualizing_census_data.md:
+  :created_at: '2012-09-21'
+  :updated_at: 2012-09-23 17:54:29.189283698 +05:30
+  :digest: aadfa28c7d7b0791f790db484d8d4c612aa909ab
