@@ -34,9 +34,8 @@ compile '*' do
                             :html => :pygmentize }
   end
 
-  if ext == 'erb'
+  if ext == 'erb' # only for xml output
     filter :erb
-    filter :relativize_paths, :type => :html
   elsif ext == 'haml' || ext.nil?
     filter :haml
     filter :relativize_paths, :type => :html
