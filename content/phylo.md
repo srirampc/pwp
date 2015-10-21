@@ -1,20 +1,22 @@
 ---
-title: ALFRED
+title: ALFRED for Phylogenetic Inference
 is_hidden: true
 _:
 ---
 
-# ALFRED :  Alignment Free Distance Estimator
-AlFRED is an Alignment Free Distance Estimator software. Currently, it
-provides the following options :
+# ALFRED : Distance Estimator for Phylogenetic Inference
 
-1. Compute k-mismatch longest common substring using the prefix-chopping
-   algorithm for a pair of sequneces.
-2. Compute k-mistmatch average common substring for every pair of
-   sequences present in a database of sequences.
-3. Estimate a greedy distance estimaton for phylogenetic tree inference.
+AlFRED is an Alignment Free Distance Estimator software for Phylogenetic
+Inference. It takes as input a set of n sequences and ouputs an n x n
+matrix of distance estimate for use in Phylogenetic inference.
 
-# Installation
+# Downloads
+
+1. [ALFRED source code](assets/docs/alfred.tar.gz)
+2. [Datasets](assets/docs/datasets.tar.gz)
+
+
+# Installation and Usage
 
 ## Dependencies
 ### External Dependencies that need to be installed
@@ -60,32 +62,37 @@ or protien alphabets. An example is as shown below.
     >SeqName
     ACGTTAGAGTAAATGGAGTAGAAT
 
-## Compute k-mismatch Average common substrings for a string database
+## Compute greedy  alignment free estimator
 Run the program by providing the pepared input file with -f option,
 the output file with the -o option, and the number of mismatches to allow
-with -k option. An example is shown below:
+with -x option. An example is shown below:
 
-    build/alfred.x -f primates.full.fas -o acs.primates.k3.out -k 3
+    build/alfred.x -f primates.full.fas -o alfred.primates.x8.out -x 8
 
 Output is generated in a matrix format, which can be fed directly to PHYLIP
 
-## Compute k-mismatch LCP between two sequences X and Y
 
-Run the program in the same manner shown above, and add the -p option to
-stop after generating the k-mismatch LCP values. An example is shown
-below:
+# Datasets
 
-    build/alfred.x -f primates.full.fas -o acs.primates.k3.out -k 3 -p
+Datasets used in our experiments are available from
+[here](assets/docs/datasets.tar.gz). The contents of the files are as
+follows:
 
-Output is generated in the json format. json ouput has two arrays, LX
-and LY -- one corresponding to each input string. The array LX is of the
-length |X|, where i-th entry of LX has the length and the position of
-the longest common substring in Y for the suffix of X starting at i. LY
-holds similar values for the string Y.
+_aliases.xlsx_ contains the alises we used for the organism names so as to
+construct the tree.
 
+_data_ sub-directory contains all the input data files and the reference
+trees. The input files are in fasta format and has .fa extension and the
+refrence trees are in phylip format and has .tree extension. For
+roseobacter dataset, multiple sequence alignment is also given. MSA for
+BaliBASE datasets can be downloaded from the BaliBASE website.
+
+_runs_ sub-directory contains all the output matrix files and the trees
+with the best RF.dist score. Ouput matrix files use the format as
+accepted by PHYLIP.
 
 # Citation
 
-Thankachan, Sharma V, Chockalingam, Sriram P, Liu, Yongchao, Apostolico,
-Alberto, and Aluru, Srinivas.  _ALFRED: A practical method for
-alignment-free distance computation_.  (Submitted.)
+Thankachan, Sharma V, Chockalingam, Sriram P, Liu, Yongchao, Krishnan,
+Ambujam, and Aluru, Srinivas. _A greedy alignment-free distance
+estimator for phylogenetic inference_ (Submitted.)
