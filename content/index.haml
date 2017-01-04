@@ -29,19 +29,23 @@ title: 'Home'
     - oldest_item = item
     = render('_excerpt', :item => item)
 
-  %h1
-    %a{:title => 'Twitter', :href => 'http://twitter.com/srirampc'} Twitter
-  %script{:type => "text/javascript",
-          :src => "/assets/js/jquery-1.8.3.min.js"}
-  %script{:type => "text/javascript",
-          :src => "/assets/js/jquery.twitter.min.js"}
-  :javascript
-    $(document).ready(function() {
-        $("#twitter").twitter({from: 'srirampc',
-        replies: false,
-        limit: 3,
-        avatar  : false});
-    });
-  %div#twitter
-    %p
-      Contacting Twitter&#8230;
+  :markdown
+    # Contact
+
+  %a.imglink{ :href => 'https://twitter.com/srirampc'}
+    %img.inset.left{'src'=>'/assets/images/twitterbird.png',
+                    'title' => 'twitter',
+                    'alt' => 'twitter',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'https://github.com/srirampc'}
+    %img.inset.left{'src'=>'/assets/images/github.png',
+                    'title' => 'twitter',
+                    'alt' => 'twitter',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'mailto:srirampc remove_this @ gmail.com'}
+    %img.inset.left{'src'=>'/assets/images/email.png',
+                    'title' => 'twitter',
+                    'alt' => 'twitter',
+                    'width' => '30px'}

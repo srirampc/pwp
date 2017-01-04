@@ -50,15 +50,7 @@ compile '*' do
     raise "Filter is not configured for #{item.identifier} in Rules file."
   end
 
-  # use layouts with .html extension or layout specified in meta
-  item[:layout] = "none" unless item[:layout] || File.extname(route_path(item)) == '.html'
-
-  #print 'hi ', item[:layout].to_s, "\n"
-  if item[:layout] == "ec"
-    layout 'ec'
-  else
-    layout 'default' unless item[:layout] == "none"
-  end
+  layout 'default' unless item[:layout] == "none"
 end
 
 #
@@ -73,7 +65,7 @@ end
 
 # so that the /assets/coffee/ item is copied to /javascripts/ item
 route '/assets/coffee/*/' do
-  item.identifier.sub(%r{^/assets/coffee}, '/assets/js').chop + '.js'
+  item.identifier.chop.sub(%r{^/assets/coffee}, '/assets/js') + '.js'
 end
 
 route '*' do

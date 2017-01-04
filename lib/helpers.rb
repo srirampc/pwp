@@ -1,7 +1,7 @@
-include Nanoc3::Helpers::Rendering
-include Nanoc3::Helpers::Blogging
-include Nanoc3::Helpers::XMLSitemap
-include Nanoc3::Helpers::LinkTo
+include Nanoc::Helpers::Rendering
+include Nanoc::Helpers::Blogging
+include Nanoc::Helpers::XMLSitemap
+include Nanoc::Helpers::LinkTo
 require 'builder'
 require 'fileutils'
 require 'time'
@@ -48,7 +48,7 @@ end
 # Creates in-memory tag pages from partial: layouts/_tag_page.haml
 def create_tag_pages
   tag_set(items).each do |tag|
-    items << Nanoc3::Item.new(
+    @items.create(
       "= render('_tag_page', :tag => '#{tag}')",           # use locals to pass data
       { :title => "Category: #{tag}", :is_hidden => true}, # do not include in sitemap.xml
          "#{blog_url}/tags/#{tag}/",                       # identifier
@@ -93,7 +93,7 @@ def copy_coffee_src
 end
 
 def partial(identifier_or_item)
-  item = !item.is_a?(Nanoc3::Item) ? identifier_or_item : item_by_identifier(identifier_or_item)
+  item = !item.is_a?(Nanoc::Item) ? identifier_or_item : item_by_identifier(identifier_or_item)
   item.compiled_content(:snapshot => :pre) 
 end
 

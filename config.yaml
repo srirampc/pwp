@@ -1,7 +1,10 @@
 ---
 output_dir: output
+string_pattern_type: legacy
 data_sources:
-- type: filesystem_unified
+- 
+  type: filesystem_unified
+  identifier_type: legacy
   items_root: /
   layouts_root: /
 
