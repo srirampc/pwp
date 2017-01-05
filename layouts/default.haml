@@ -26,6 +26,7 @@
 
       - if @item[:kind] == 'article'
         = render('_article', :item => @item, :content => content)
+        %hr
         = render('_other_articles_nav', :reference_item => @item)
         .clear
         - if disqus_shortname && !is_front_page?
@@ -35,7 +36,7 @@
       .clear
 
     -# disqus: inserts number of commments
-    - if @item[:disqus] == 'true'
+    - if disqus_shortname && @item[:disqus] == 'true'
       :javascript
         (function() {
           var links = document.getElementsByTagName('a');
