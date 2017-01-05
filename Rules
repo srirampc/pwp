@@ -50,7 +50,7 @@ compile '*' do
     raise "Filter is not configured for #{item.identifier} in Rules file."
   end
 
-  layout 'default' unless item[:layout] == "none"
+  layout 'default' unless item[:layout]
 end
 
 #
