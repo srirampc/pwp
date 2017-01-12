@@ -16,25 +16,25 @@ point.
 
 4. Following gems are required to compile (bundle gems update should work!)
 
-    activesupport
-    adsf
-    builder
-    coffee-script
-    compass
-    compass-colors
-    compass-susy-plugin
-    cri
-    haml
-    i18n
-    mime-types
-    nanoc
-    nokogiri
-    org-ruby
-    rack
-    rake
-    rdiscount
-    rubypants
-    systemu
+       activesupport
+       adsf
+       builder
+       coffee-script
+       compass
+       compass-colors
+       compass-susy-plugin
+       cri
+       haml
+       i18n
+       mime-types
+       nanoc
+       nokogiri
+       org-ruby
+       rack
+       rake
+       rdiscount
+       rubypants
+       systemu
 
 5. Compile command
 
