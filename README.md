@@ -16,21 +16,30 @@ point.
 
 4. Following gems are required to compile (bundle gems update should work!)
 
-    gem update --system
-    gem install nanoc
-    gem install compass
-    gem install coffee-script
-    gem install builder
-    gem install compass-susy-plugin
-    gem install haml
-    gem install rdiscount maruku bluecloth
-    gem install adsf
-    gem install systemu
+    activesupport
+    adsf
+    builder
+    coffee-script
+    compass
+    compass-colors
+    compass-susy-plugin
+    cri
+    haml
+    i18n
+    mime-types
+    nanoc
+    nokogiri
+    org-ruby
+    rack
+    rake
+    rdiscount
+    rubypants
+    systemu
 
 5. Compile command
 
-    nanoc compile
+    bundle exec nanoc compile
 
 6. To view, run web server as
 
-    nanoc view 
+    bundle exec nanoc view 
