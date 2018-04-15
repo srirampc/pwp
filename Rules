@@ -13,16 +13,31 @@ preprocess do
   add_update_item_attributes
 end
 
-compile '/assets/css/*/' do
+compile '/assets/css/**/*' do
   filter :sass, Compass.sass_engine_options
   filter :relativize_paths, :type => :css
 end
 
-compile '/assets/coffee/*/' do
+compile '/assets/coffee/**/*' do
   filter :coffee
 end
 
-compile '*' do
+compile '/sitemap.xml.*' do
+  filter :erb
+  write '/sitemap.xml'
+end
+
+compile '/blog/atom.xml.*' do
+  filter :erb
+  write '/blog/atom.xml'
+end
+
+compile '/robots.*' do
+  filter :erb
+  write '/robots.txt'
+end
+
+compile '/**/*' do
   # item[:extension] returns 'html.erb' for multi-dotted filename
   ext = item[:extension].nil? ? nil : item[:extension].split('.').last
 
@@ -55,9 +70,9 @@ compile '*' do
 
   #print 'hi ', item[:layout].to_s, "\n"
   if item[:layout] == "ec"
-    layout 'ec'
+    layout '/ec*'
   else
-    layout 'default' unless item[:layout] == "none"
+    layout '/default.*' unless item[:layout] == "none"
   end
 end
 
@@ -76,8 +91,8 @@ route '/assets/coffee/*/' do
   item.identifier.sub(%r{^/assets/coffee}, '/assets/js').chop + '.js'
 end
 
-route '*' do
+route '/**/*' do
   route_path(item)
 end
 
-layout '*', :haml
+layout '/**/*', :haml

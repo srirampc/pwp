@@ -9,7 +9,7 @@
     - else
       = item[:title]
   
-  = render('_meta', :item => item)
+  = render('/_meta.*', :item => item)
 
   .body
     != content || partial(item)

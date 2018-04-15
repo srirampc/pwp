@@ -10,11 +10,11 @@ point.
 
 1. Install ruby 1.9.2 with rvm
 
-2. Install node.js, npm and coffee-script (With Ubuntu, one can do apt-get install)
+2. Install node.js, npm and coffeescript/coffee-script (With Ubuntu, one can do apt-get install)
 
-3. Install python-pygments (apt-get works here too!)
+3. Install python-pygments: pip install Pygments (apt-get works here too!)
 
-4. Following gems are required to compile (bundle gems update should work!)
+4. Following gems are required to compile (bundle update should work!)
 
     gem update --system
     gem install nanoc

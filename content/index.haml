@@ -27,7 +27,7 @@ title: 'Home'
 
   - sorted_articles[current_index, 3].each do |item|
     - oldest_item = item
-    = render('_excerpt', :item => item)
+    = render('/_excerpt.*', :item => item)
 
   %h1
     %a{:title => 'Twitter', :href => 'http://twitter.com/srirampc'} Twitter
