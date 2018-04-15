@@ -10,7 +10,7 @@ title: 'Home'
 
   :markdown
     # Welcome
-    I'm Sriram P C, a student, programmer, and a former consultant.
+    I'm Sriram P Chockalingam, a student, programmer, and a former consultant.
 
     # [Work](/work.html)
     I am a [Research Scholar](/work.html) in Computational Biology,
@@ -29,19 +29,47 @@ title: 'Home'
     - oldest_item = item
     = render('/_excerpt.*', :item => item)
 
-  %h1
-    %a{:title => 'Twitter', :href => 'http://twitter.com/srirampc'} Twitter
-  %script{:type => "text/javascript",
-          :src => "/assets/js/jquery-1.8.3.min.js"}
-  %script{:type => "text/javascript",
-          :src => "/assets/js/jquery.twitter.min.js"}
-  :javascript
-    $(document).ready(function() {
-        $("#twitter").twitter({from: 'srirampc',
-        replies: false,
-        limit: 3,
-        avatar  : false});
-    });
-  %div#twitter
-    %p
-      Contacting Twitter&#8230;
+  :markdown
+    # Contact
+
+  %a.imglink{ :href => 'mailto:srirampc _remove_this_ @ gmail.com'}
+    %img.inset.left{'src'=>'/assets/images/email.png',
+                    'title' => 'Email',
+                    'alt' => 'email',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'https://scholar.google.com/citations?user=5qWYl20AAAAJ&hl=en'}
+    %img.inset.left{'src'=>'/assets/images/gscholar.png',
+                    'title' => 'Google Scholar',
+                    'alt' => 'Google Scholar',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'https://www.researchgate.net/profile/Sriram_Chockalingam'}
+    %img.inset.left{'src'=>'/assets/images/researchgate.png',
+                    'title' => 'Research Gate',
+                    'alt' => 'Research Gate',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'https://linkedin.com/in/srirampc'}
+    %img.inset.left{'src'=>'/assets/images/linkedin.png',
+                    'title' => 'LinkedIn',
+                    'alt' => 'LinkedIn',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'https://bitbucket.org/srirampc'}
+    %img.inset.left{'src'=>'/assets/images/bitbucket.png',
+                    'title' => 'Bitbucket',
+                    'alt' => 'Bitbucket',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'https://github.com/srirampc'}
+    %img.inset.left{'src'=>'/assets/images/github.png',
+                    'title' => 'Github',
+                    'alt' => 'Github',
+                    'width' => '30px'}
+
+  %a.imglink{ :href => 'https://twitter.com/srirampc'}
+    %img.inset.left{'src'=>'/assets/images/twitterbird.png',
+                    'title' => 'Twitter',
+                    'alt' => 'Twitter',
+                    'width' => '30px'}

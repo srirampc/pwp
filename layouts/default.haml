@@ -35,7 +35,7 @@
       .clear
 
     -# disqus: inserts number of commments
-    - if @item[:disqus] == 'true'
+    - if disqus_shortname && @item[:disqus] == 'true'
       :javascript
         (function() {
           var links = document.getElementsByTagName('a');

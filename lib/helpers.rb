@@ -51,7 +51,7 @@ def create_tag_pages
     @items.create(
       "= render('/_tag_page.*', :tag => '#{tag}')",           # use locals to pass data
       { :title => "Category: #{tag}", :is_hidden => true}, # do not include in sitemap.xml
-        Nanoc::Identifier.new("#{blog_url}/tags/#{tag}/", type: :legacy),                       # identifier
+        Nanoc::Identifier.new("#{blog_url}/tags/#{tag}/", type: :legacy),  # identifier
       :binary => false
     )
   end

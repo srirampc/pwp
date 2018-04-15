@@ -1,7 +1,10 @@
 ---
 output_dir: output
+string_pattern_type: legacy
 data_sources:
-- type: filesystem_unified
+- 
+  type: filesystem_unified
+  identifier_type: legacy
   items_root: /
   layouts_root: /
 
@@ -16,11 +19,8 @@ deploy:
     options: ['-ave ssh', '--exclude=.DS_Store', '--exclude=*~']
 
 # domain to which this site is deployed
-base_url: http://www.cse.iitb.com/~srirampc/
+base_url: http://srirampc.net
 
-google_analytics:
-  domain: mgutz.com
-  site_id: UA-9655468-1
 
 # currently used by logo
 site_name: Sriram P C
@@ -41,7 +41,7 @@ excerpt_count: 6
 other_articles_max: 3
 
 # DISQUS Site Shortname. Comment out to disable.
-disqus_shortname: qsac
+# disqus_shortname: qsac
 
 #
 text_extensions: [ 'css', 'erb', 'haml', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'php', 'rb', 'sass', 'scss', 'txt', 'coffee', 'org' ]
