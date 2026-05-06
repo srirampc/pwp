@@ -1,7 +1,7 @@
 ---
 title: Why I fail to solve problems ?
 tags: [problem solving]
-created_at: 2011/03/20
+created_at: 2011-03-20
 kind: article
 excerpt: Observations on my problem solving failures.
 disqus: true

@@ -15,8 +15,8 @@ module MGutz
     def initialize(store_filename = "file_changes.yaml")
       @store_filename = store_filename
 
-      if File.exists?(@store_filename)
-        @changes = YAML.load_file(@store_filename)
+      if File.exist?(@store_filename)
+        @changes = YAML.load_file(@store_filename, permitted_classes: [Time, Symbol])
       else
         @changes = {}
       end

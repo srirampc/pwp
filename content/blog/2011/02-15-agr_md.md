@@ -1,7 +1,7 @@
 ---
 title: Dr. AGR M.D.
 tags: [teaching]
-created_at: 2011/02/15
+created_at: 2011-02-15
 kind: article
 excerpt: Few observations on my favorite teacher AGR
 disqus: true

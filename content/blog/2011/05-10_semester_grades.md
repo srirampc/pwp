@@ -1,7 +1,7 @@
 ---
 title: Grades of Spring Semester 2010-11
 tags: [academic]
-created_at: 2011/05/10
+created_at: 2011-05-10
 kind: article
 excerpt: 'Grades : Oven and Freezer.'
 disqus: true

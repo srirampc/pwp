@@ -1,12 +1,12 @@
 ---
 output_dir: output
-string_pattern_type: legacy
+string_pattern_type: glob
 data_sources:
 - 
-  type: filesystem_unified
-  identifier_type: legacy
-  items_root: /
-  layouts_root: /
+  type: filesystem
+  identifier_type: full
+  #items_root: /
+  #layouts_root: /
 
 # Custom settings
 

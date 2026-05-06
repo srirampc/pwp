@@ -1,7 +1,7 @@
 ---
 title: Ph.D. Seminar Presentation
 tags: [seminar, academic]
-created_at: 2011/05/03
+created_at: 2011-05-03
 kind: article
 excerpt: What I learned from my Ph.D seminar ?
 disqus: true
