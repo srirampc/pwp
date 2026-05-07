@@ -14,7 +14,8 @@ preprocess do
 end
 
 compile '/assets/css/**/*' do
-  filter :sass, Compass.sass_engine_options
+  path = @item.identifier.without_ext + '.css'
+  filter :sass,  Compass.sass_engine_options
   filter :relativize_paths, :type => :css
 end
 
@@ -79,17 +80,17 @@ end
 
 #
 # For compass : partials need not be translated.
-route '/assets/css/_*/' do
+route '/assets/css/_**' do
   nil
 end
 
-route '/assets/css/*/' do
-  item.identifier.chop + '.css'
+route '/assets/css/**/*' do
+  item.identifier.without_ext + '.css'
 end
 
 # so that the /assets/coffee/ item is copied to /javascripts/ item
-route '/assets/coffee/*/' do
-  item.identifier.sub(%r{^/assets/coffee}, '/assets/js').chop + '.js'
+route '/assets/coffee/**/*' do
+  item.identifier.without_ext.sub(%r{^/assets/coffee}, '/assets/js') + '.js'
 end
 
 route '/**/*' do

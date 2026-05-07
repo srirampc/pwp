@@ -1,6 +1,6 @@
-source :gemcutter
+source "https://rubygems.org"
 
-gem "nanoc"
+gem 'nanoc', '~> 4.14'
 gem "rack"
 gem "rake"
 gem "mime-types"
@@ -19,3 +19,5 @@ gem 'adsf'
 gem 'org-ruby'
 gem 'rubypants'
 gem 'systemu'
+gem 'ostruct'
+gem 'webrick'

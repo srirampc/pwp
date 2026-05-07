@@ -8,33 +8,13 @@ point.
 
 # Dependencies/Installation to build using nanoc
 
-1. Install ruby 2.4 with rvm
+1. Install ruby 4.0.3 with rvm/rbenv (Currently tested with `rbenv`)
 
-2. Install node.js, npm and coffeescript/coffee-script (With Ubuntu, one can do apt-get install)
+2. Install node.js, npm and coffeescript/coffee-script (With Ubuntu, one can do `apt-get install`)
 
 3. Install python-pygments: pip install Pygments (apt-get works here too!)
 
-4. Following gems are required to compile (bundle update should work!)
-
-       activesupport
-       adsf
-       builder
-       coffee-script
-       compass
-       compass-colors
-       compass-susy-plugin
-       cri
-       haml
-       i18n
-       mime-types
-       nanoc
-       nokogiri
-       org-ruby
-       rack
-       rake
-       rdiscount
-       rubypants
-       systemu
+4. Install the gems in Gemfile that required to compile (`bundle update` should work!)
 
 5. Compile command
 

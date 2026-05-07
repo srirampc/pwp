@@ -18,7 +18,7 @@ namespace :create do
     title = ENV['title'].capitalize
     path, filename, full_path = calc_path(title)
 
-    if File.exists?(full_path)
+    if File.exist?(full_path)
       $stderr.puts "\t[error] Exists #{full_path}"
       exit 1
     end

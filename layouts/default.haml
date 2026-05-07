@@ -28,25 +28,8 @@
       - if @item[:kind] == 'article'
         = render('/_article.*', :item => @item, :content => content)
         = render('/_other_articles_nav.*', :reference_item => @item)
-        .clear
-        - if disqus_shortname && !is_front_page?
-          = render('/_disqus.*', :item => @item)
       - else
         = content
       .clear
-
-    -# disqus: inserts number of commments
-    - if disqus_shortname && @item[:disqus] == 'true'
-      :javascript
-        (function() {
-          var links = document.getElementsByTagName('a');
-          var query = '?';
-          for(var i = 0; i < links.length; i++) {
-            if(links[i].href.indexOf('#disqus_thread') >= 0) {
-              query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-            }
-          }
-          document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/#{disqus_shortname}/get_num_replies.js' + query + '"></' + 'script>');
-        })();
  
 
