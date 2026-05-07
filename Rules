@@ -54,7 +54,7 @@ compile '/**/*' do
     filter :erb
   elsif ext == 'haml' || ext.nil?
     filter :erb
-    filter :haml
+    filter :haml, :escape_html => false
     filter :relativize_paths, :type => :html
   elsif ext == 'md' || ext == 'markdown'
     filter :erb
@@ -97,4 +97,4 @@ route '/**/*' do
   route_path(item)
 end
 
-layout '/**/*', :haml
+layout '/**/*', :haml, :escape_html => false

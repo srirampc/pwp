@@ -13,16 +13,17 @@
 
   %body
     -# needed since some content render <pre> blocks
-    - content = find_and_preserve(yield)
-    - #content = yield
+    -# content = find_and_preserve(yield)
+    -# Above no longer works in nanoc 4.4
+    - content = yield
     #main
       #header 
         .logo
           = logo
         - if /^#{blog_url}/ === @item.identifier 
-          = render('/_blog-nav.*', :item => @item, :content => content)
+          = render('/_blog-nav.*')
         - else
-          = render('/_nav.*', :item => @item, :content => content)
+          = render('/_nav.*')
       .clear
 
       - if @item[:kind] == 'article'

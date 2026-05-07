@@ -5,7 +5,7 @@ gem "rack"
 gem "rake"
 gem "mime-types"
 gem "cri"
-gem 'haml', '~> 5.0'
+gem 'haml'
 gem "rdiscount"
 gem "builder"
 gem "activesupport"

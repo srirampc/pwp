@@ -20,6 +20,10 @@ point.
 
     bundle exec nanoc compile
 
+  To run with debug info, add the following flags:
+
+    bundle exec nanoc compile --verbose --debug
+
 6. To view, run web server as
 
     bundle exec nanoc view 
