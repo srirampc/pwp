@@ -74,7 +74,7 @@ compile '/**/*' do
   if item[:layout] == "ec"
     layout '/ec*'
   else
-    layout '/default.*' unless item[:layout] == "none"
+    layout '/default.*', :escape_html => false unless item[:layout] == "none"
   end
 end
 
