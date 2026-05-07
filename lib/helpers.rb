@@ -84,7 +84,8 @@ end
 
 # Copy static assets outside of content instead of having nanoc3 process them.
 def copy_static
-  FileUtils.cp_r 'static/.', 'output/' 
+  FileUtils.mkdir_p 'output/assets'
+  FileUtils.cp_r 'static/assets/.', 'output/assets/'
 end
 
 # This is a hack for now : need to do this better
