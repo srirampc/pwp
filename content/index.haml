@@ -10,39 +10,61 @@ title: 'Home'
 
   :markdown
     # Welcome
-    I'm Sriram P Chockalingam, a researcher in Computational Biology, 
-    specifically interested in the use of parallel computing in 
+    I'm Sriram P Chockalingam, a researcher in Computational Biology,
+    specifically interested in the use of parallel computing in
     high-throughput sequencing applications and systems biology.
 
     # [Work](/work.html)
-    I am currently working as a [Research Scientist](/work.html) at the 
-    [Institute for Data Engineering and Science](http://ideas.gatech.edu/) in 
-    [Georiga Intitute of Technology](http://www.gatech.edu/) at Atlanta, 
-    GA, USA. My research interests include Parallel Algorithms, 
-    Approximate Sequence Matching, and Reverse-engineering Gene networks at genome-scale. 
-    I completed by Ph.D in Computer Science and Engineering from 
-    [IIT Bombay](http://www.iitb.ac.in/). 
-    Formerly, I was a software engineer and a consultant in an IT company.
+    I am currently working as a [Research Scientist](/work.html) at the
+    [Institute for Data Engineering and Science](http://ideas.gatech.edu/) in
+    [Georiga Intitute of Technology](http://www.gatech.edu/) at Atlanta,
+    GA, USA. My research interests include Parallel Algorithms,
+    High-Performance Computing and large-scale biological data analysis
+    specfically, problems related to high-throughput sequencing data and
+    genome-scale gene networks.
+    I completed by Ph.D in Computer Science and Engineering from
+    [IIT Bombay](http://www.iitb.ac.in/).
+    Prior to my Ph.D, I was a software engineer and a consultant in an IT company.
 
     # Recent Publications
-    
-    1. __Sriram P. Chockalingam__, Sharma V. Thankachan, and Srinivas Aluru. 
-      A parallel algorithm for finding all pairs k-mismatch maximal common substrings. 
-      In Proceedings of the International Conference for High Performance Computing, 
-      Networking, Storage and Analysis (SC '16'), p. 67., 2016.
-    2. __Sriram P Chockalingam__, Maneesha Aluru, Hongqing Guo, Yanhai Yin, and 
-      Srinivas Aluru. Reverse Engineering Gene Networks: 
-      A Comparative Study at Genome-scale. 
-      In Proceedings of the 8th ACM International Conference on Bioinformatics, 
-      Computational Biology, and Health Informatics (ACM-BCB), pp. 480-490, 2017.
-    3. Sharma V Thankachan, __Sriram P Chockalingam__, Yongchao Liu, Ambujam Krishnan, 
-      and Srinivas Aluru. A greedy alignment-free distance estimator for 
-      phylogenetic inference. BMC Bioinformatics, Vol. 18, No. 8 (107): p. 238.
+    1. Bhattaram, Swethasree, __Sriram Chockalingam__, Maneesha Aluru and
+      Srinivas Aluru (2026). ‘scSAGA: Single-cell Sampled Gromov Wasserstein
+      Alignment for Scalable and Memory-efficient Integration of Multi-modal
+      Single Cell Data’. In: bioRxiv. DOI:
+      [10.64898/2026.03.26.714573](https://doi.org/10.64898/2026.03.26.714573).
+    2. __Chockalingam, Sriram P__, Maneesha Aluru and Srinivas Aluru (2025).
+      ‘SCEMENT: scalable and memory efficient integration of large-scale
+      single-cell RNA-sequencing data’. In: Bioinformatics 41.2, btaf057.
+      ISSN: 1367-4811. DOI:
+      [10.1093/bioinformatics/btaf057](https://doi.org/10.1093/bioinformatics/btaf057).
+    3. Connolly, Erin, Tony Pan, Maneesha Aluru, __Sriram Chockalingam__,
+      Vishal Dhere and Greg Gibson (2024). ‘Loss of immune cell identity with
+      age inferred from large atlases of single cell transcriptomes’.
+      In: Aging Cell 23.12. e14306 ACE-24-0600.R1, e14306. DOI:
+      [10.1111/acel.14306](https://doi.org/10.1111/acel.14306).
 
-    For a complete list with co-authors and citations, please refer to my 
+    For a complete list with co-authors and citations, please refer to the
+    publications listed [here](/pubs) or my
     [Google Scholar profile](https://scholar.google.com/citations?user=5qWYl20AAAAJ&hl=en).
 
-  :markdown
+    # Recent Software
+    ## [Sope](https://github.com/srirampc/sope)
+
+    Rust library for MPI . Based to the C++ library
+    [mxx](https://github.com/patflick/mxx), library provides a simplified, and
+    type-safe bindings to common MPI operations with error handling.
+    Also includes a collection of scalable, high-performance standard algorithms for
+    parallel distributed memory architectures, such as sorting and distribution.
+    Available at [github](https://github.com/srirampc/sope).
+
+    ## [SCEMENT](https://github.com/AluruLab/scement)
+    Software for scalable and memory efficient integration of large-
+    scale single cell RNA-sequencing Data.
+    Available at [github](https://github.com/AluruLab/scement).
+
+    For a complete list of software that I have either authored/co-authored
+    or advised or , please refer to the list [here](/software)
+
     # Contact
 
   %a.imglink{ :href => 'mailto:srirampc _remove_this_ @ gmail.com'}
@@ -57,6 +79,12 @@ title: 'Home'
                     'alt' => 'Google Scholar',
                     'width' => '30px'}
 
+  %a.imglink{ :href => 'https://github.com/srirampc'}
+    %img.inset.left{'src'=>'/assets/images/github.png',
+                    'title' => 'Github',
+                    'alt' => 'Github',
+                    'width' => '30px'}
+
   %a.imglink{ :href => 'https://linkedin.com/in/srirampc'}
     %img.inset.left{'src'=>'/assets/images/linkedin.png',
                     'title' => 'LinkedIn',
@@ -67,12 +95,6 @@ title: 'Home'
     %img.inset.left{'src'=>'/assets/images/bitbucket.png',
                     'title' => 'Bitbucket',
                     'alt' => 'Bitbucket',
-                    'width' => '30px'}
-
-  %a.imglink{ :href => 'https://github.com/srirampc'}
-    %img.inset.left{'src'=>'/assets/images/github.png',
-                    'title' => 'Github',
-                    'alt' => 'Github',
                     'width' => '30px'}
 
   %a.imglink{ :href => 'https://www.researchgate.net/profile/Sriram_Chockalingam'}
