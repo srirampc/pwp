@@ -10,24 +10,37 @@ title: 'Home'
 
   :markdown
     # Welcome
-    I'm Sriram P Chockalingam, a student, programmer, and a former consultant.
+    I'm Sriram P Chockalingam, a researcher in Computational Biology, 
+    specifically interested in the use of parallel computing in 
+    high-throughput sequencing applications and systems biology.
 
     # [Work](/work.html)
-    I am a [Research Scholar](/work.html) in Computational Biology,
-    specifically in the use of parallel computing in high-throughput
-    sequencing and systems biology. I am with the Computer Science and Engg.
-    Department at IIT Bombay. Formerly, I was a consultant in an IT company.
+    I am currently working as a [Research Scientist](/work.html) at the 
+    [Institute for Data Engineering and Science](http://ideas.gatech.edu/) in 
+    [Georiga Intitute of Technology](http://www.gatech.edu/) at Atlanta, 
+    GA, USA. My research interests include Parallel Algorithms, 
+    Approximate Sequence Matching, and Reverse-engineering Gene networks at genome-scale. 
+    I completed by Ph.D in Computer Science and Engineering from 
+    [IIT Bombay](http://www.iitb.ac.in/). 
+    Formerly, I was a software engineer and a consultant in an IT company.
 
-    # [Blog](/blog/)
-    I keep a blog called _[QSAC](/blog/)_ on my work and life as a research scholar.
-    Recent posts include:
+    # Recent Publications
+    
+    1. __Sriram P. Chockalingam__, Sharma V. Thankachan, and Srinivas Aluru. 
+      A parallel algorithm for finding all pairs k-mismatch maximal common substrings. 
+      In Proceedings of the International Conference for High Performance Computing, 
+      Networking, Storage and Analysis (SC '16'), p. 67., 2016.
+    2. __Sriram P Chockalingam__, Maneesha Aluru, Hongqing Guo, Yanhai Yin, and 
+      Srinivas Aluru. Reverse Engineering Gene Networks: 
+      A Comparative Study at Genome-scale. 
+      In Proceedings of the 8th ACM International Conference on Bioinformatics, 
+      Computational Biology, and Health Informatics (ACM-BCB), pp. 480-490, 2017.
+    3. Sharma V Thankachan, __Sriram P Chockalingam__, Yongchao Liu, Ambujam Krishnan, 
+      and Srinivas Aluru. A greedy alignment-free distance estimator for 
+      phylogenetic inference. BMC Bioinformatics, Vol. 18, No. 8 (107): p. 238.
 
-  - oldest_item = nil
-  - current_index = 0
-
-  - sorted_articles[current_index, 3].each do |item|
-    - oldest_item = item
-    = render('/_excerpt.*', :item => item)
+    For a complete list with co-authors and citations, please refer to my 
+    [Google Scholar profile](https://scholar.google.com/citations?user=5qWYl20AAAAJ&hl=en).
 
   :markdown
     # Contact
@@ -42,12 +55,6 @@ title: 'Home'
     %img.inset.left{'src'=>'/assets/images/gscholar.png',
                     'title' => 'Google Scholar',
                     'alt' => 'Google Scholar',
-                    'width' => '30px'}
-
-  %a.imglink{ :href => 'https://www.researchgate.net/profile/Sriram_Chockalingam'}
-    %img.inset.left{'src'=>'/assets/images/researchgate.png',
-                    'title' => 'Research Gate',
-                    'alt' => 'Research Gate',
                     'width' => '30px'}
 
   %a.imglink{ :href => 'https://linkedin.com/in/srirampc'}
@@ -68,8 +75,8 @@ title: 'Home'
                     'alt' => 'Github',
                     'width' => '30px'}
 
-  %a.imglink{ :href => 'https://twitter.com/srirampc'}
-    %img.inset.left{'src'=>'/assets/images/twitterbird.png',
-                    'title' => 'Twitter',
-                    'alt' => 'Twitter',
+  %a.imglink{ :href => 'https://www.researchgate.net/profile/Sriram_Chockalingam'}
+    %img.inset.left{'src'=>'/assets/images/researchgate.png',
+                    'title' => 'Research Gate',
+                    'alt' => 'Research Gate',
                     'width' => '30px'}

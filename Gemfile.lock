@@ -19,6 +19,11 @@ GEM
     adsf (1.5.3)
       rack (>= 1.0.0, < 4.0.0)
       rackup (~> 2.1)
+    adsf-live (1.5.3)
+      adsf (~> 1.3)
+      em-websocket (~> 0.5)
+      eventmachine (~> 1.2)
+      listen (~> 3.0)
     base64 (0.3.0)
     bigdecimal (4.1.2)
     builder (3.3.0)
@@ -51,6 +56,11 @@ GEM
     ddplugin (1.0.3)
     diff-lcs (1.6.2)
     drb (2.2.3)
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0)
+    eventmachine (1.2.7)
+    eventmachine (1.2.7-x86-mingw32)
     execjs (2.10.1)
     ffi (1.17.4)
     ffi (1.17.4-x86-mingw32)
@@ -58,6 +68,7 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
+    http_parser.rb (0.8.1)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     immutable-ruby (0.2.0)
@@ -66,6 +77,10 @@ GEM
     io-console (0.8.2)
     json (2.19.5)
     json_schema (0.21.0)
+    listen (3.10.0)
+      logger
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
     memo_wise (1.13.0)
     method_source (1.1.0)
@@ -112,6 +127,11 @@ GEM
       nanoc-checking (~> 1.0)
       nanoc-cli (~> 4.11, >= 4.11.15)
       nanoc-core (~> 4.11, >= 4.11.15)
+    nanoc-live (1.1.1)
+      adsf-live (~> 1.4)
+      listen (~> 3.0)
+      nanoc-cli (~> 4.14, >= 4.14.7)
+      nanoc-core (~> 4.14, >= 4.14.7)
     nokogiri (1.19.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -177,6 +197,7 @@ DEPENDENCIES
   i18n
   mime-types
   nanoc (~> 4.14)
+  nanoc-live
   nokogiri
   org-ruby
   ostruct

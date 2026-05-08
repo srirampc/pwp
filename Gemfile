@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem 'nanoc', '~> 4.14'
+gem 'nanoc-live'
 gem "rack"
 gem "rake"
 gem "mime-types"
