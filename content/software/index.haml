@@ -12,51 +12,57 @@ title: Software
 
   :markdown
     # Open-source Software
-    Open source software that are either authored/co-authored by me, or
-    involved in the design/implementation of the software.
+    Listed below are open-source software that I either 
+    (a) authored/co-authored, (or) 
+    (b) advised/constributed in the design/implementation of the software.
     Also included is a list of minor updates I have contributed to other
     open source software.
 
     # General Purpose Software
-    ## [Sope](https://github.com/srirampc/sope)
-
-    Rust library for MPI . Based to the C++ library
-    [mxx](https://github.com/patflick/mxx), library provides a simplified, and
+    ## [sope](https://github.com/srirampc/sope)
+    Rust library for MPI. Developed based to the 
+    [mxx](https://github.com/patflick/mxx) C++ library, 
+    this library provides a simplified, and
     type-safe bindings to common MPI operations with error handling.
     Also includes a collection of scalable, high-performance standard algorithms for
     parallel distributed memory architectures, such as sorting and distribution.
     Available at [github](https://github.com/srirampc/sope).
 
     ## [Awitree](https://github.com/srirampc/)
-
     A simple interface to [jstree](https://www.jstree.com/), javascript library
-    to construct tree via the [AnyWidget](https://anywidget.dev/) protocol that
-    can be used to render trees in both Jupyter and Marimo
-    Notebooks. Source available at [github](https://github.com/srirampc/awitree)
+    to construct tree via the [AnyWidget](https://anywidget.dev/) protocol.
+    This library can be used to construct interactive trees within  
+    Jupyter and Marimo Notebooks. 
+    Python/Javascript sources are available at 
+    [github](https://github.com/srirampc/awitree)
 
     # Research Software (Role as Author/Co-author)
 
     ## [ParEnsNet](https://github.com/srirampc/parensnet_rs)
-    Parallel Ensemble networks for large-scale single-cell data.
-    Available at https://github.com/srirampc/parensnet_rs.
+    Constructs ensemble gene networks for large-scale single-cell data
+    in parallel.
+    Implmented in Rust, this library includes a suite of parallel gene 
+    network construction algorithms -- PIDC, GRNBoost, and MI-based methods.
+    Source available at [github](https://github.com/srirampc/parensnet_rs).
 
     ## [SCEMENT](https://github.com/AluruLab/scement)
     Software for scalable and memory efficient integration of large-
     scale single cell RNA-sequencing Data.
-    Available at [github]https://github.com/AluruLab/scement.
+    Implemented in C++ with a python wrapper;
+    Source available at [github]https://github.com/AluruLab/scement.
 
     ## [Apache Airavata Cerebrum](https://github.com/apache/airavata‑cerebrum)
-    A repository for the Integrated Neuroscience Computational
-    Framework. Contributed to one of the components that allows
-    integration of large single-cell datasets from Brain Atlases into
-    Computational Neuroscience models.
-    Available at [github](https://github.com/apache/airavata‑cerebrum).
+    An Integrated Computational Neuroscience 
+    Framework, whose goal is to build computational neuroscience models
+    that can be constructed using large single-cell datasets from Brain Atlases.
+    Python source is available at 
+    [github](https://github.com/apache/airavata‑cerebrum).
 
     ## [EnGRaiN](https://github.com/AluruLab/EnGRaiN)
     EnGRaiN is the first supervised machine learning method to
     construct ensemble networks using small training datasets of
-    true positives and true negatives among gene pairs. Available at
-    https://github.com/AluruLab/EnGRaiN.
+    true positives and true negatives among gene pairs. 
+    Python source available at [github](https://github.com/AluruLab/EnGRaiN).
 
     ## [ParFastAAI](https://github.com/AluruLab/parfastaai)
     A C++ Implementation of a parallel algorithm for fast computation of
@@ -64,61 +70,58 @@ title: Software
     Available at https://github.com/AluruLab/parfastaai.
 
     ## [gbrunner](https://github.com/srirampc/gbrunner)
-
     Utilities and runner scripts for generating gene regulatory net-
-    works with arboreto, XGBoost and Light GBM. Available at
-    https://github.com/srirampc/gbrunner.
+    works with arboreto, XGBoost and Light GBM. Python 
+    source available at [github](https://github.com/srirampc/gbrunner).
 
     ## [Ardmore](https://github.com/AluruLab/ardmore)
-
-    Ardmore is a suite of containers and aggregation scripts for sim-
-    ulated runs that enables reproducibility in evaluation of gene
-    network construction. Available at https://github.com/AluruLab/ardmore.
+    Ardmore is a suite of docker containers and aggregation scripts for 
+    simulated runs that enables reproducibility in evaluation of gene
+    network construction. 
+    Source available at [github](https://github.com/AluruLab/ardmore).
 
     ## [ADYAR](http://github.com/srirampc/adyar)
-
-    ADYAR implements alignment-free heuristic for fast sequence
+    ADYAR implements the alignment-free heuristic for fast sequence
     comparisons with applications to phylogeny reconstruction.
-    Available at http://github.com/srirampc/adyar.
+    C++ source available at [github](http://github.com/srirampc/adyar).
 
     ## [ALFRED and ALFRED-G](http://srirampc.net/alfred)
-
     ALFRED implements an alignment free method to compute the
     average common substring measure with k mismatches, and is
     used for Phylogenetic Inference. ALFRED-G a greedy Align-
     ment Free Distance Estimator software for Phylogenetic Infer-
     ence, and implements an approximate algorithm that takes linear
-    time. Both available [here](http://srirampc.net/alfred.html).
+    time. C+++ sources are available [here](http://srirampc.net/alfred.html).
     It is based on the metric of average common
     substring computed as described in the research paper:
     [doi: 10.1089/cmb.2015.0217](https://doi.org/10.1089/cmb.2015.0217) .
 
     ## [Parallel kMCS](https://bitbucket.org/srirampc/bhavani/)
-
     Parallel kMCS implements an efficient parallel algorithm that
     given a database of strings, identifies all pairs of strings that
     have common substrings, while allowing a limited number
     of mismatches.
-    Available at https://bitbucket.org/srirampc/bhavani/.
+    C++ sources available at 
+    [bitbucket](https://bitbucket.org/srirampc/bhavani/).
 
     ## [PSbEC](http://srirampc.net/psbec.html)
-
     PSbEC is a parallel spectrum-based error correction software for
     big genomic datasets. It can be used as framework to parallel-
-    ize any spectrum-based error correction software. Available at
+    ize any spectrum-based error correction software. 
+    C++ sources are available [here]
     http://srirampc.net/psbec.html.
 
     # Research Software (Role as an Advisor/Collaborator)
 
     ## [ramBLe](https://github.com/AluruLab/ramBLe)
     ramBLe is a parallel framework for Bayesian Network Learning.
-    Available at https://github.com/AluruLab/ramBLe.
+    C++ sources available at [github](https://github.com/AluruLab/ramBLe).
     This software is selected as one of the three finalists for for inclu-
     sion as a reproducibility challenge in the SC21 Student Cluster
     Competition (SCC).
 
     ## [ParsiMoNe](https://github.com/AluruLab/ParsiMoNe)
-    Parallel implementation for construction of Module Networks.
+    Parallel implementation in C++ for construction of Module Networks.
 
     ## [MCPNet](https://github.com/AluruLab/MCPNet)
     MCPNet is a gene regulatory network (GRN) reconstruction tool that identify
@@ -128,16 +131,15 @@ title: Software
     MCPNet is implemented in C++ and is parallelized for multi-core and
     MPI multi-node environments. It is designed to reconstruct networks in
     unsupervised and semi-supervised manners.
+    C++ sources are available at [github](https://github.com/AluruLab/MCPNet)
 
     # Other Open Source Contributions (Made Minor Updates/Bug-fixes)
 
     ## [hdf5-rust](https://github.com/srirampc/hdf5-rust)
-
     A fork of [metno/hdf5-rust](https://github.com/metno/hdf5-rust)
     that includes MPI parallel read/write of HDF5 1D/2D datasets.
 
     # [dualrnaseq](https://github.com/srirampc/dualrnaseq)
-
     A fork of [nf-core/dualrnaseq](https://github.com/nf-core/dualrnaseq)
     that enables long running quantification processes and fix annotation
     bugs.
