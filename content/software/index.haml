@@ -4,21 +4,23 @@ title: Software
 
 %div#software
   %img.inset.right{'src'=>'/assets/images/two_bridges_small.png',
-                   'title' => 'Programming',
-                   'alt' => 'Sofware',
+                   'title' => 'Construction',
+                   'alt' => 'Software as Construction',
                    'height' => '150px'}
 
 
 
+  %h1 Open-source Software
   :markdown
-    # Open-source Software
     Listed below are open-source software that I either 
-    (a) authored/co-authored, (or) 
-    (b) advised/constributed in the design/implementation of the software.
-    Also included is a list of minor updates I have contributed to other
-    open source software.
+    (a) [authored/co-authored](#author), (or) 
+    (b) [advised/constributed](#research-advisor) in the design/implementation
+    of the software.
+    Also included is a list of my minor updates to other
+    [open source software](#os-contributions).
 
-    # General Purpose Software
+  %h1#author General Purpose Software
+  :markdown
     ## [sope](https://github.com/srirampc/sope)
     Rust library for MPI. Developed based to the 
     [mxx](https://github.com/patflick/mxx) C++ library, 
@@ -36,7 +38,8 @@ title: Software
     Python/Javascript sources are available at 
     [github](https://github.com/srirampc/awitree)
 
-    # Research Software (Role as Author/Co-author)
+  %h1#research-software Research Software (as Author/Co-author)
+  :markdown
 
     ## [ParEnsNet](https://github.com/srirampc/parensnet_rs)
     Constructs ensemble gene networks for large-scale single-cell data
@@ -111,7 +114,8 @@ title: Software
     C++ sources are available [here]
     http://srirampc.net/psbec.html.
 
-    # Research Software (Role as an Advisor/Collaborator)
+  %h1#research-advisor Research Software (as an Advisor/Collaborator)
+  :markdown
 
     ## [ramBLe](https://github.com/AluruLab/ramBLe)
     ramBLe is a parallel framework for Bayesian Network Learning.
@@ -133,13 +137,14 @@ title: Software
     unsupervised and semi-supervised manners.
     C++ sources are available at [github](https://github.com/AluruLab/MCPNet)
 
-    # Other Open Source Contributions (Made Minor Updates/Bug-fixes)
+  %h1#os-contributions Other Updates
+  :markdown
 
     ## [hdf5-rust](https://github.com/srirampc/hdf5-rust)
     A fork of [metno/hdf5-rust](https://github.com/metno/hdf5-rust)
     that includes MPI parallel read/write of HDF5 1D/2D datasets.
 
-    # [dualrnaseq](https://github.com/srirampc/dualrnaseq)
+    ## [dualrnaseq](https://github.com/srirampc/dualrnaseq)
     A fork of [nf-core/dualrnaseq](https://github.com/nf-core/dualrnaseq)
     that enables long running quantification processes and fix annotation
     bugs.
